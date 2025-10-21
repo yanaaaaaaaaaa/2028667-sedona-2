@@ -4,50 +4,45 @@
 <head>
   <meta charset="utf-8">
   <title>Седона — главная</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="page-header">
     <a class="logo" href="index.html">
-      <img src="#" alt="Логотип города Седона.">
+      <img src="image/logo.svg" width="138" height="70" alt="Логотип города Седона.">
     </a>
 
     <nav class="main-nav" aria-label="Основная навигация">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html" aria-current="page">Главная</a></li>
-        <li class="main-nav__item"><a href="#">О Седоне</a></li>
-        <li class="main-nav__item"><a href="catalog.html">Гостиницы</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">О Седоне</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
 
       <ul class="user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#" aria-label="Поиск по сайту">
-            <span class="visually-hidden">Поиск</span>
-            <img src="#" alt="">
+        <li>
+          <a href="#" aria-label="Поиск">
+            <img src="image/search.svg" width="20" height="20" alt="Поиск.">
           </a>
         </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#" aria-label="Избранное">
-            <span class="visually-hidden">Избранное</span>
-            <img src="#" alt="">
+        <li>
+          <a href="#" aria-label="Избранное">
+            <img src="image/heart.svg" width="20" height="20" alt="Избранное.">
           </a>
         </li>
-        <li class="user-nav__item">
-          <a class="button button--primary" href="#" aria-controls="hotel-search-modal">
-            Хочу сюда!
-          </a>
+        <li>
+          <a class="button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main>
     <!-- Хиро -->
     <section class="hero">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img src="#" alt="Панорама каньонов Седоны.">
-      <p class="hero__lead">Welcome to the gorgeous</p>
-      <p class="hero__title">SEDONA</p>
-      <p class="hero__note">Because the Grand Canyon sucks!</p>
+      <img src="image/index-background.jpg" width="1200" height="485" alt="Горы и каньоны Седоны.">
+      <h1>WELCOME<br>to the gorgeous<br>SEDONA</h1>
+      <p>Because the Grand Canyon sucks!</p>
     </section>
 
     <!-- Интро -->
@@ -56,107 +51,102 @@
       <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
-    <!-- Причины (плитки с картинками) -->
-    <section class="reasons" aria-label="Причины посетить Седону">
-      <h2 class="visually-hidden">Причины посетить Седону</h2>
-
-      <article class="reason reason--wide">
-        <div class="reason__text">
-          <h3>Настоящий городок</h3>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь.</p>
+    <!-- Причины: блок 1 -->
+    <section class="reasons">
+      <div class="reason-row">
+        <div class="reason-tile">
+          <h3>НАСТОЯЩИЙ<br>ГОРОДОК</h3>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="reason__media">
-          <img src="#" alt="Уютные улочки и кафе в Седоне.">
+        <div class="reason-photo">
+          <img src="image/photo-1.jpg" width="700" height="430" alt="Уютные домики и кафе Седоны.">
         </div>
-      </article>
+      </div>
 
-      <ul class="reason-grid">
-        <li class="reason-grid__item">
-          <h3>Небольшая площадь</h3>
-          <p>Все достопримечательности находятся очень близко.</p>
+      <!-- Малые плитки -->
+      <ul class="reason-mini">
+        <li>
+          <h3>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
+          <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="reason-grid__item">
-          <h3>Красивая дорога</h3>
+        <li>
+          <h3>КРАСИВАЯ<br>ДОРОГА</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="reason-grid__item">
-          <h3>Мало туристов</h3>
-          <p>Большинство едет в Гранд Каньон и толпится там.</p>
+        <li>
+          <h3>МАЛО<br>ТУРИСТОВ</h3>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
 
-      <article class="reason reason--wide">
-        <div class="reason__media">
-          <img src="#" alt="Скалы и каньоны близ Седоны.">
+      <!-- Причины: блок 2 -->
+      <div class="reason-row">
+        <div class="reason-photo">
+          <img src="image/photo-2.jpg" width="700" height="430" alt="Скалы и вид на каньон в Седоне.">
         </div>
-        <div class="reason__text">
-          <h3>Там есть мост дьявола</h3>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
+        <div class="reason-tile">
+          <h3>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
-      </article>
+      </div>
     </section>
 
-    <!-- Приезжайте -->
-    <section class="come" aria-label="Комфорт и уют">
-      <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+    <!-- Блок «Приезжайте…» -->
+    <section class="come">
+      <h2>ПРИЕЗЖАЙТЕ В СЕДОНУ ОТДОХНУТЬ<br>В КОМФОРТЕ И УЮТЕ!</h2>
       <p>Опытный персонал и качественное обслуживание!</p>
 
       <ul class="features">
-        <li class="features__item">
-          <img src="#" alt="" aria-hidden="true">
-          <h3>Жильё</h3>
+        <li>
+          <img src="image/home.svg" width="75" height="72" alt="Иконка дома.">
+          <h3>ЖИЛЬЁ</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="features__item">
-          <img src="#" alt="" aria-hidden="true">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте топовый фирменный бургер — вы не разочаруетесь!</p>
+        <li>
+          <img src="image/info.svg" width="75" height="72" alt="Иконка бургера.">
+          <h3>ЕДА</h3>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="features__item">
-          <img src="#" alt="" aria-hidden="true">
-          <h3>Сувениры</h3>
+        <li>
+          <img src="image/star.svg" width="75" height="72" alt="Иконка подарка.">
+          <h3>СУВЕНИРЫ</h3>
           <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
     </section>
 
-    <!-- Поиск гостиниц CTA -->
-    <section class="cta-hotels">
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <p><a class="button button--primary" href="catalog.html">Поиск гостиницы в Седоне</a></p>
+    <!-- CTA -->
+    <section class="cta">
+      <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p><a class="button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a></p>
     </section>
 
     <!-- Подписка -->
-    <section class="subscribe" aria-label="Подписка на рассылку">
-      <h2>Подпишись на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
-        <input type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail" required>
-        <button type="submit">Подписаться</button>
+    <section class="subscribe">
+      <img src="image/Subscribe.png" width="1200" height="300" alt="Горы Седоны на фоне для блока подписки.">
+      <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <label for="email-index" class="visually-hidden">Ваш e-mail</label>
+        <input id="email-index" name="email" type="email" placeholder="Ваш e-mail" required>
+        <button type="submit">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
     <ul class="social">
-      <li><a href="#" aria-label="ВКонтакте"><img src="#" alt=""></a></li>
-      <li><a href="#" aria-label="Телеграм"><img src="#" alt=""></a></li>
-      <li><a href="#" aria-label="YouTube"><img src="#" alt=""></a></li>
+      <li><a href="https://vk.com/htmlacademy"><img src="image/social-vk.svg" width="20" height="20" alt="ВКонтакте."></a></li>
+      <li><a href="https://t.me/htmlacademy"><img src="image/social-telegram.svg" width="20" height="20" alt="Телеграм."></a></li>
+      <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="image/social-youtube.svg" width="20" height="20" alt="YouTube."></a></li>
     </ul>
 
-    <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-    <a class="copyright" href="#" aria-label="HTML Academy">
-      <img src="#" alt="html academy">
+    <a class="academy" href="https://htmlacademy.ru/">
+      <img src="image/logo_htmlacademy.png" width="110" height="32" alt="HTML Academy.">
     </a>
   </footer>
-
-  <!-- Заготовка модального окна (без контента) -->
-  <section id="hotel-search-modal" class="modal visually-hidden" aria-hidden="true" role="dialog" aria-modal="true">
-    <!-- Содержимое модального окна размечать не требуется на этом этапе -->
-  </section>
 </body>
 </html>
