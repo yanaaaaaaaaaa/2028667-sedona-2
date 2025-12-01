@@ -852,8 +852,95 @@ a {
   border: none;
   background-color: #f2f2f2;
 }
-
-/* Состояние "открыто" окна — можешь добавить класс через JS позже */
 .modal--shown {
   display: flex;
+}
+
+/* === ГРИДЫ ДЛЯ КАТАЛОГА === */
+
+/* Сетка списка гостиниц */
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Карточка гостиницы — тоже грид */
+.hotel-card {
+  display: grid;
+  grid-template-rows: 200px auto auto 1fr auto;
+  height: auto;
+}
+
+/* Фото */
+.hotel-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Контент — занимает всю строку */
+.hotel-card__content {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 8px;
+}
+
+/* Кнопки "подробнее" и "в избранное" — в строку */
+.hotel-card__controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Зона рейтинга и звёзд — занимает всю ширину */
+.hotel-card__meta {
+  grid-column: 1 / -1;
+}
+
+/* === ГРИДЫ ДЛЯ ФИЛЬТРА === */
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, min-content)) 1fr;
+  gap: 40px;
+}
+
+.filter__group--price {
+  grid-column: 1 / -1;
+}
+
+/* === ГРИДЫ ДЛЯ ФОРМ === */
+
+.modal__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.modal__field--inline {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 10px;
+}
+
+/* Кнопка "найти" во всю строку */
+.modal__submit {
+  grid-column: 1 / -1;
+}
+
+/* === ДЛЯ ПОДПИСКИ === */
+
+.subscribe__form {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+.subscribe__input {
+  grid-column: 1 / 2;
+}
+
+.button--subscribe {
+  grid-column: 2 / 3;
 }
